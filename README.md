@@ -30,13 +30,17 @@ This is a Python script for creating a mashup of audio tracks from YouTube video
   - `youtube_search`
 
   You can install these libraries using pip:
-  ``` pip install pytube moviepy youtube-search-python ```
+  ```
+  pip install pytube moviepy youtube-search-python
+  ```
 
 ## Usage
 
 Run the script from the command line with the required parameters:
 
-``` python Mashup.py <singer_name> <num_videos> <audio_duration> <output_filename> ```
+``` 
+python Mashup.py <singer_name> <num_videos> <audio_duration> <output_filename>
+```
 
 ## Notes
 
