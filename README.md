@@ -1,6 +1,6 @@
 # YouTube Mashup Generator
 
-This is a Python script for creating a mashup of audio tracks from YouTube videos. The script allows you to specify a search query, then it downloads multiple YouTube videos, extracts their audio, and concatenates the audio tracks into a single output file. The program utilizes the `pytube`, `moviepy`, `glob`, and `youtube_search` libraries, as well as Python's built-in `threading` and `multiprocessing` modules.
+This is a Python script for creating a mashup of songs of your favorite singer from YouTube videos. The script allows you to specify the name of the singer, then it downloads multiple songs, extracts their audio, and concatenates the audio tracks into a single output file. The program utilizes the `pytube`, `moviepy`, `glob`, and `youtube_search` libraries, as well as Python's built-in `threading` and `multiprocessing` modules.
 
 ## How it works
 
@@ -15,7 +15,7 @@ This is a Python script for creating a mashup of audio tracks from YouTube video
 
 2. **Video Download and Audio Extraction**
 
-   The script searches for YouTube videos based on the input `search_query` using the `YoutubeSearch` library. It then proceeds to download each video in parallel using `threading`. The `pytube` library is used to download the highest resolution stream of each video. After downloading, the script extracts the audio from each video clip using `moviepy` and saves it as a separate mp3 file in the "Audios" directory.
+   The script searches for YouTube videos based on the input `singer_name` using the `YoutubeSearch` library. It then proceeds to download each video in parallel using `threading`. The `pytube` library is used to download the stream of each video. After downloading, the script extracts the audio from each video clip using `moviepy` and saves it as a separate mp3 file in the "Audios" directory.
 
 3. **Mashup Generation**
 
